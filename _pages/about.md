@@ -6,7 +6,7 @@ subtitle: Edward P. Fitts Department of Industrial and Systems Engineering · NC
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: lab-group-2026.png
   image_circular: false
   more_info: >
     <p>Dr. Ben Rachunok</p>
@@ -17,14 +17,12 @@ selected_papers: true
 social: true
 
 announcements:
+  enabled: false
+
+latest_posts:
   enabled: true
   scrollable: true
   limit: 5
-
-latest_posts:
-  enabled: false
-  scrollable: true
-  limit: 3
 ---
 
 # Quantifying risk. Advancing resilience. Building equitable communities.

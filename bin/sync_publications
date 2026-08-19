@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+project_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+source_bib="$(mktemp)"
+trap 'rm -f "$source_bib"' EXIT
+
+gh api \
+  -H "Accept: application/vnd.github.raw+json" \
+  repos/brachunok/rachunok_CV/contents/papers.bib > "$source_bib"
+
+ruby "$project_root/bin/import_bibliography.rb" \
+  "$source_bib" \
+  "$project_root/_bibliography/papers.bib"

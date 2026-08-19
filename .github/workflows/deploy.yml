@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - "assets/**"
+      - "bin/**"
       - "**.bib"
       - "**.html"
       - "**.js"
@@ -34,6 +35,7 @@ on:
       - main
     paths:
       - "assets/**"
+      - "bin/**"
       - "**.bib"
       - "**.html"
       - "**.js"
@@ -67,11 +69,21 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+      - name: Checkout publication bibliography 📚
+        uses: actions/checkout@v4
+        with:
+          repository: brachunok/rachunok_CV
+          token: ${{ secrets.CV_REPO_TOKEN }}
+          path: .bibliography-source
+          sparse-checkout: papers.bib
+          sparse-checkout-cone-mode: false
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.3.5"
           bundler-cache: true
+      - name: Import publications 📖
+        run: ruby bin/import_bibliography.rb .bibliography-source/papers.bib _bibliography/papers.bib
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
         with:

@@ -1,4 +1,5 @@
 _site
+.bibliography-source/
 .bundle
 .DS_store
 .idea
