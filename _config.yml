@@ -405,6 +405,7 @@ filtered_bibtex_keywords:
     preview,
     selected,
     slides,
+    student_paper,
     supp,
     video,
     website,

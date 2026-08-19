@@ -95,7 +95,47 @@ def selected_keyword?(entry)
   (match[1] || match[2]).split(",").any? { |keyword| keyword.strip.casecmp("selected").zero? }
 end
 
+def student_author_indexes(entry)
+  annotations = field_value(entry, "author+an")
+  return [] unless annotations
+
+  annotations.split(";").filter_map do |annotation|
+    index, labels = annotation.split("=", 2)
+    index.to_i if labels.to_s.split(",").any? { |label| label.strip.casecmp("student").zero? }
+  end
+end
+
+def mark_student_authors(entry, indexes)
+  return entry if indexes.empty? || entry.match?(/\bannotation\s*=/i)
+
+  authors = field_value(entry, "author")
+  return entry unless authors
+
+  marked_authors = authors.split(/\s+and\s+/i).each_with_index.map do |author, index|
+    next author unless indexes.include?(index + 1)
+
+    if author.include?(",")
+      author.sub(",", "*,")
+    else
+      author.sub(/(\S+)\s*\z/, "\\1*")
+    end
+  end.join(" and ")
+
+  entry = entry.sub(/(\bauthor\s*=\s*)(\{[^}]*\}|"[^"]*")/mi) do
+    opening = Regexp.last_match(2)[0]
+    closing = Regexp.last_match(2)[-1]
+    "#{Regexp.last_match(1)}#{opening}#{marked_authors}#{closing}"
+  end
+  add_field(entry, "annotation", "* Student author")
+end
+
 def enrich_entry(entry, scholar_ids)
+  students = student_author_indexes(entry)
+  unless students.empty?
+    entry = mark_student_authors(entry, students)
+    entry = add_field(entry, "student_paper", "true")
+  end
+
   if selected_keyword?(entry)
     entry = add_field(entry, "selected", "true")
     entry = add_field(entry, "bibtex_show", "true")

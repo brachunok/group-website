@@ -55,6 +55,8 @@ This command uses your GitHub CLI login. It also converts the `selected` keyword
 
 The deployed site checks the private CV repository every six hours, so a change to its `papers.bib` appears automatically without changing the CV repository or copying files by hand. For selected entries, the import adds BibTeX, Altmetric, and Dimensions controls. The existing citation workflow matches publications from the configured Google Scholar profile by title and supplies publication-specific Scholar links and citation counts.
 
+Student authors identified by `student` in the source entry's `author+an` field are marked automatically. On the homepage, selected student-led papers appear first, followed by selected papers with Altmetric coverage, with newer papers first within each tier.
+
 ## Validation
 
 Before proposing a change, run:

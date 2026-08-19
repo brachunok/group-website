@@ -16,6 +16,10 @@ profile:
 selected_papers: true
 social: true
 
+scholar:
+  sort_by: [student_paper, altmetric, year]
+  order: [descending, descending, descending]
+
 announcements:
   enabled: false
 
