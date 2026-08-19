@@ -1,0 +1,27 @@
+# Local preview overrides. Production continues to use _config.yml alone.
+exclude:
+  - AGENTS.md
+  - al-folio-upgrade-report.md
+  - bin/
+  - CLAUDE.md
+  - Dockerfile
+  - docker-compose.yml
+  - docker-compose-slim.yml
+  - docs/
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - lighthouse_results/
+  - package.json
+  - package-lock.json
+  - _pages/about_einstein.md
+  - _posts/2020-09-28-twitter.md
+  - purgecss.config.js
+  - README.md
+  - readme_preview/
+  - gems/
+  - migrations/
+  - vendor
+
+imagemagick:
+  enabled: false
