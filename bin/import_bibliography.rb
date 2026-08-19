@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
+require "yaml"
+
 # Imports the lab's canonical BibTeX file without requiring a second Git checkout
 # inside the public website repository. Entries tagged with the `selected`
 # keyword are translated to the field al-folio uses on the homepage.
@@ -9,6 +11,42 @@ source_path, destination_path = ARGV
 abort "Usage: ruby bin/import_bibliography.rb SOURCE.bib DESTINATION.bib" unless source_path && destination_path
 
 source = File.read(source_path).sub(/\A---\s*\n---\s*\n+/, "")
+
+def normalize_title(title)
+  title.to_s
+    .gsub(/\\[A-Za-z]+/, " ")
+    .gsub(/[{}]/, "")
+    .downcase
+    .gsub(/[^a-z0-9]+/, " ")
+    .strip
+end
+
+def field_value(entry, field)
+  match = /\b#{Regexp.escape(field)}\s*=\s*(?:\{([^}]*)\}|"([^"]*)")/mi.match(entry)
+  match && (match[1] || match[2])
+end
+
+def add_field(entry, field, value)
+  return entry if field_value(entry, field)
+
+  closing = entry[-1]
+  body = entry[0...-1].rstrip
+  separator = body.end_with?(",") ? "" : ","
+  "#{body}#{separator}\n  #{field} = {#{value}}\n#{closing}"
+end
+
+def scholar_ids_by_title(path)
+  return {} unless File.file?(path)
+
+  data = YAML.safe_load_file(path) || {}
+  (data["papers"] || {}).each_with_object({}) do |(publication_id, publication), matches|
+    title = normalize_title(publication["title"])
+    matches[title] = publication_id.to_s.split(":").last unless title.empty?
+  end
+rescue Psych::SyntaxError => error
+  warn "Ignoring invalid Scholar citation data in #{path}: #{error.message}"
+  {}
+end
 
 def entries_in(source)
   entries = []
@@ -57,15 +95,25 @@ def selected_keyword?(entry)
   (match[1] || match[2]).split(",").any? { |keyword| keyword.strip.casecmp("selected").zero? }
 end
 
-def add_selected_field(entry)
-  return entry if entry.match?(/\bselected\s*=/i) || !selected_keyword?(entry)
+def enrich_entry(entry, scholar_ids)
+  if selected_keyword?(entry)
+    entry = add_field(entry, "selected", "true")
+    entry = add_field(entry, "bibtex_show", "true")
 
-  closing = entry[-1]
-  body = entry[0...-1].rstrip
-  separator = body.end_with?(",") ? "" : ","
-  "#{body}#{separator}\n  selected = {true}\n#{closing}"
+    if field_value(entry, "doi")
+      entry = add_field(entry, "altmetric", "true")
+      entry = add_field(entry, "dimensions", "true")
+    end
+  end
+
+  title = normalize_title(field_value(entry, "title"))
+  scholar_id = scholar_ids[title]
+  entry = add_field(entry, "google_scholar_id", scholar_id) if scholar_id
+  entry
 end
 
+citations_path = ENV.fetch("CITATIONS_FILE", File.join(File.dirname(destination_path), "..", "_data", "citations.yml"))
+scholar_ids = scholar_ids_by_title(citations_path)
 output = +"---\n---\n\n"
 cursor = 0
 seen = {}
@@ -88,7 +136,7 @@ entries_in(source).each do |metadata|
   end
 
   seen[metadata[:key]] = comparison
-  imported_entry = add_selected_field(raw_entry)
+  imported_entry = enrich_entry(raw_entry, scholar_ids)
   selected += 1 if imported_entry.match?(/\bselected\s*=\s*[\{"]true/i)
   output << imported_entry
   imported += 1

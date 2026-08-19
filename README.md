@@ -53,6 +53,8 @@ bin/sync_publications
 
 This command uses your GitHub CLI login. It also converts the `selected` keyword in a BibTeX entry into the al-folio field that displays the entry under **Selected publications**. GitHub Actions performs the same import automatically before every site build using the `CV_REPO_TOKEN` repository secret.
 
+The deployed site checks the private CV repository every six hours, so a change to its `papers.bib` appears automatically without changing the CV repository or copying files by hand. For selected entries, the import adds BibTeX, Altmetric, and Dimensions controls. The existing citation workflow matches publications from the configured Google Scholar profile by title and supplies publication-specific Scholar links and citation counts.
+
 ## Validation
 
 Before proposing a change, run:
