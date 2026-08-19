@@ -29,8 +29,6 @@ latest_posts:
   limit: 5
 ---
 
-# Quantifying risk. Advancing resilience. Building equitable communities.
-
 Welcome to the **Sustainable and Resilient Systems Lab**, housed in the Edward P. Fitts Department of Industrial and Systems Engineering at North Carolina State University.
 
 We study communities as interconnected systems spanning infrastructure, social networks, logistics, economies, and governance. Our work seeks to make these systems more sustainable and resilient to climate change and natural hazards.
