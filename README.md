@@ -14,7 +14,7 @@ Most routine updates do not require changing layouts or application code.
 | ------------------------------- | --------------------------------- |
 | Site settings and feature flags | `_config.yml`                     |
 | Homepage                        | `_pages/about.md`                 |
-| Publications                    | `_bibliography/papers.bib`        |
+| Publications                    | `papers.bib` in `rachunok_CV`     |
 | News                            | `_news/`                          |
 | Research projects               | `_projects/`                      |
 | People and profiles             | `_pages/profiles.md` and `_data/` |
@@ -42,6 +42,20 @@ Start the local preview:
 Open [http://127.0.0.1:4001](http://127.0.0.1:4001). Jekyll automatically rebuilds the site when content files change; refresh the browser to see the update.
 
 The `_config_dev.yml` file disables demo-only processing that is unnecessary for local content previews. Production builds use `_config.yml`.
+
+## Publications
+
+The canonical bibliography remains in the private [`brachunok/rachunok_CV`](https://github.com/brachunok/rachunok_CV) repository. To refresh the site's local copy after editing `papers.bib`, run:
+
+```bash
+bin/sync_publications
+```
+
+This command uses your GitHub CLI login. It also converts the `selected` keyword in a BibTeX entry into the al-folio field that displays the entry under **Selected publications**. GitHub Actions performs the same import automatically before every site build using the `CV_REPO_TOKEN` repository secret.
+
+The deployed site checks the private CV repository every six hours, so a change to its `papers.bib` appears automatically without changing the CV repository or copying files by hand. For selected entries, the import adds BibTeX, Altmetric, and Dimensions controls. The existing citation workflow matches publications from the configured Google Scholar profile by title and supplies publication-specific Scholar links and citation counts.
+
+Student authors identified by `student` in the source entry's `author+an` field are marked automatically. The homepage shows at most five selected publications: student-led papers appear first, followed by papers with Altmetric coverage, with newer papers first within each tier.
 
 ## Validation
 

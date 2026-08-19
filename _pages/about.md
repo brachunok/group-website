@@ -6,7 +6,7 @@ subtitle: Edward P. Fitts Department of Industrial and Systems Engineering · NC
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: lab-group-2026.png
   image_circular: false
   more_info: >
     <p>Dr. Ben Rachunok</p>
@@ -16,18 +16,18 @@ profile:
 selected_papers: true
 social: true
 
+scholar:
+  sort_by: [student_paper, altmetric, year]
+  order: [descending, descending, descending]
+
 announcements:
+  enabled: false
+
+latest_posts:
   enabled: true
   scrollable: true
   limit: 5
-
-latest_posts:
-  enabled: false
-  scrollable: true
-  limit: 3
 ---
-
-# Quantifying risk. Advancing resilience. Building equitable communities.
 
 Welcome to the **Sustainable and Resilient Systems Lab**, housed in the Edward P. Fitts Department of Industrial and Systems Engineering at North Carolina State University.
 
