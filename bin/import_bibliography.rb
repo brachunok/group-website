@@ -129,14 +129,14 @@ def mark_student_authors(entry, indexes)
   add_field(entry, "annotation", "* Student author")
 end
 
-def enrich_entry(entry, scholar_ids)
+def enrich_entry(entry, scholar_ids, homepage_selected:)
   students = student_author_indexes(entry)
   unless students.empty?
     entry = mark_student_authors(entry, students)
     entry = add_field(entry, "student_paper", "true")
   end
 
-  if selected_keyword?(entry)
+  if homepage_selected
     entry = add_field(entry, "selected", "true")
     entry = add_field(entry, "bibtex_show", "true")
 
@@ -154,13 +154,31 @@ end
 
 citations_path = ENV.fetch("CITATIONS_FILE", File.join(File.dirname(destination_path), "..", "_data", "citations.yml"))
 scholar_ids = scholar_ids_by_title(citations_path)
+entry_metadata = entries_in(source)
+selected_limit = ENV.fetch("SELECTED_PUBLICATIONS_LIMIT", "5").to_i
+homepage_selected_keys = entry_metadata
+  .filter_map do |metadata|
+    entry = source[metadata[:start]...metadata[:finish]]
+    next unless selected_keyword?(entry)
+
+    [
+      metadata[:key],
+      student_author_indexes(entry).empty? ? 0 : 1,
+      field_value(entry, "doi") ? 1 : 0,
+      field_value(entry, "year").to_i,
+    ]
+  end
+  .sort_by { |(_key, student, altmetric, year)| [-student, -altmetric, -year] }
+  .first(selected_limit)
+  .map(&:first)
+
 output = +"---\n---\n\n"
 cursor = 0
 seen = {}
 imported = 0
 selected = 0
 
-entries_in(source).each do |metadata|
+entry_metadata.each do |metadata|
   output << source[cursor...metadata[:start]]
   raw_entry = source[metadata[:start]...metadata[:finish]]
   comparison = raw_entry.gsub(/\s+/, " ").strip
@@ -176,7 +194,7 @@ entries_in(source).each do |metadata|
   end
 
   seen[metadata[:key]] = comparison
-  imported_entry = enrich_entry(raw_entry, scholar_ids)
+  imported_entry = enrich_entry(raw_entry, scholar_ids, homepage_selected: homepage_selected_keys.include?(metadata[:key]))
   selected += 1 if imported_entry.match?(/\bselected\s*=\s*[\{"]true/i)
   output << imported_entry
   imported += 1
