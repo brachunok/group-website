@@ -29,6 +29,35 @@ pagination:
   </div>
   {% endif %}
 
+<section class="news-events" aria-labelledby="upcoming-events-heading">
+  <div class="gd-kicker">
+    <span>Schedule</span>
+    <span>Talks / Conferences / Presentations</span>
+  </div>
+  <h2 id="upcoming-events-heading">Upcoming events</h2>
+  {% assign upcoming_events = site.data.events | where_exp: "event", "event.hidden != true" %}
+  {% if upcoming_events.size > 0 %}
+    <div class="news-event-list">
+      {% for event in upcoming_events %}
+        <article class="news-event">
+          <time datetime="{{ event.date }}">{{ event.date | date: "%b %d, %Y" }}</time>
+          <div>
+            <h3>{% if event.url %}<a href="{{ event.url }}">{{ event.title }}</a>{% else %}{{ event.title }}{% endif %}</h3>
+            {% if event.venue or event.location %}<p>{{ event.venue }}{% if event.venue and event.location %} / {% endif %}{{ event.location }}</p>{% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="news-events-empty">No upcoming presentations are currently listed.</p>
+  {% endif %}
+</section>
+
+<figure class="gd-image-band gd-image-band--tab">
+  <img src="{{ '/assets/img/projects/data-center.jpg' | relative_url }}" alt="Engineers at work in the Apollo 13 mission control room in 1970">
+  <figcaption>Lab news / work in progress — NASA Apollo 13 Mission Control, 1970.</figcaption>
+</figure>
+
 {% if site.display_tags and site.display_tags.size > 0 or site.display_categories and site.display_categories.size > 0 %}
 
   <div class="tag-category-list">

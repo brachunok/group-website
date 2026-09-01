@@ -9,7 +9,7 @@ profile:
   image: lab-group-2026.png
   image_circular: false
   more_info: >
-    <p>Dr. Ben Rachunok</p>
+    <p>Dr. Ben Rachunok (top row right)</p>
     <p>North Carolina State University</p>
     <p>Raleigh, North Carolina</p>
 
@@ -29,18 +29,34 @@ latest_posts:
   limit: 5
 ---
 
-Welcome to the **Sustainable and Resilient Systems Lab**, housed in the Edward P. Fitts Department of Industrial and Systems Engineering at North Carolina State University.
+<div class="gd-kicker">
+  <span>Systems / Risk / Resilience</span>
+  <span>Raleigh, NC</span>
+</div>
 
-We study communities as interconnected systems spanning infrastructure, social networks, logistics, economies, and governance. Our work seeks to make these systems more sustainable and resilient to climate change and natural hazards.
+<p class="gd-intro">We study communities as interconnected systems—and design better ways to prepare for a changing climate.</p>
 
-Our research combines optimization, data science, machine learning, and simulation to quantify risk, predict impacts, and improve adaptation decisions. A central goal is closing the climate resilience gap by identifying and reducing the disproportionate burdens of extreme events on historically disadvantaged populations.
+<p class="gd-methods">Our research combines optimization, data science, machine learning, and simulation to quantify risk, predict impacts, and improve adaptation decisions. A central goal is closing the climate resilience gap by identifying and reducing the disproportionate burdens of extreme events on historically disadvantaged populations.</p>
 
-## Our research
+<div class="gd-research-grid">
+  <section class="gd-research-item">
+    <span class="gd-index">01 / RISK</span>
+    <h2>Quantifying risk</h2>
+    <p>Measuring how hazards propagate through interconnected social and infrastructure systems.</p>
+  </section>
+  <section class="gd-research-item">
+    <span class="gd-index">02 / RESILIENCE</span>
+    <h2>Advancing resilience</h2>
+    <p>Developing decision tools for adaptation, preparedness, and recovery.</p>
+  </section>
+  <section class="gd-research-item">
+    <span class="gd-index">03 / EQUITY</span>
+    <h2>Building equitable communities</h2>
+    <p>Identifying and reducing unequal access, exposure, and recovery outcomes.</p>
+  </section>
+</div>
 
-- **Quantifying risk** — measuring how hazards propagate through interconnected social and infrastructure systems.
-- **Advancing resilience** — developing decision tools for adaptation, preparedness, and recovery.
-- **Building equitable communities** — identifying and reducing unequal access, exposure, and recovery outcomes.
-
-## Join the lab
-
-We welcome prospective Ph.D. students interested in engineering research that combines data science, simulation, optimization, and machine learning for climate resilience. Learn more on our prospective students page or contact Dr. Rachunok at `barachun@ncsu.edu`.
+<section class="gd-join">
+  <h2>Join the lab</h2>
+  <p>Research funding is presently limited, so we may not always have funded positions available. I am always open to conversations with students whose interests align with the lab. If you would like to discuss a possible fit, contact Dr. Rachunok at <code>barachun@ncsu.edu</code>.</p>
+</section>
