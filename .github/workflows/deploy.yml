@@ -77,11 +77,11 @@ jobs:
           repository: brachunok/rachunok_CV
           token: ${{ secrets.CV_REPO_TOKEN }}
           path: .bibliography-source
-          sparse-checkout: |
-            papers.bib
-            cv_7.pdf
-            cv_7.tex
-          sparse-checkout-cone-mode: false
+      - name: Build CV PDF 📄
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: cv_7.tex
+          working_directory: .bibliography-source
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
@@ -91,7 +91,7 @@ jobs:
         run: ruby bin/import_bibliography.rb .bibliography-source/papers.bib _bibliography/papers.bib
       - name: Import CV 👤
         run: ruby bin/import_cv.rb .bibliography-source/cv_7.tex _data/cv.yml
-      - name: Import CV PDF 📄
+      - name: Import CV PDF ↗️
         run: cp .bibliography-source/cv_7.pdf assets/pdf/ben-rachunok-cv.pdf
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
