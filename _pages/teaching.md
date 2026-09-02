@@ -2,14 +2,16 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Course materials, schedules, and resources for classes taught.
+description: Courses in production systems, sustainability, risk, and resilience.
 nav: true
 nav_order: 6
-calendar: true
 ---
 
-This page displays a collection of courses with detailed schedules, materials, and resources. You can organize your courses by years, terms, or topics.
+<figure class="gd-image-band gd-image-band--tab">
+  <img src="{{ '/assets/img/projects/water-utility.jpg' | relative_url }}" alt="A water treatment technician compares untreated and treated water samples">
+  <figcaption>Learn by observing systems — U.S. EPA DOCUMERICA collection.</figcaption>
+</figure>
 
-{% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %}
+Our courses connect systems thinking with quantitative methods. Public course descriptions and topic outlines are collected here; enrolled students should use NC State WolfWare for current materials, assignments, and deadlines.
 
 {% include courses.liquid %}

@@ -9,6 +9,11 @@ nav_order: 5
 
 <!-- _pages/publications.md -->
 
+<figure class="gd-image-band gd-image-band--tab">
+  <img src="{{ '/assets/img/projects/outage-prediction.png' | relative_url }}" alt="A marked satellite image of Hurricane Ella over the Atlantic Ocean in 1970">
+  <figcaption>Observe / model / communicate — ESSA–NASA satellite image of Hurricane Ella, 1970.</figcaption>
+</figure>
+
 <!-- Bibsearch Feature -->
 
 {% include bib_search.liquid %}

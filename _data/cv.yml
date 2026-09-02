@@ -1,189 +1,292 @@
+---
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
-  image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
-
+  name: Ben Rachunok, Ph.D.
+  label: Assistant Professor of Industrial and Systems Engineering
+  email: barachun@ncsu.edu
+  location: Raleigh, North Carolina
+  image: people/IMG_3368.png
+  summary: Ben Rachunok studies interconnected infrastructure and social systems to
+    advance sustainable, resilient, and equitable communities under climate change
+    and natural hazards.
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
-    - network: LinkedIn
-      username: example
-
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
-
+      username: brachunok
+    - network: ORCID
+      username: 0000-0001-6405-978X
   sections:
-    Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
-        highlights:
-          - Description 1.
-          - Description 2.
-
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
-        highlights:
-          - Description 1.
-          - Description 2.
-
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: North Carolina State University
+        position: Assistant Professor
+        location: Raleigh, NC
+        summary: Industrial and Systems Engineering
+        start_date: "2023"
+        end_date: Present
+      - company: North Carolina State University
+        position: Graduate Faculty
+        location: Raleigh, NC
+        summary: Operations Research
+        start_date: "2023"
+        end_date: Present
+      - company: Stanford University
+        position: Rising Environmental Leadership Program Fellow
+        location: Stanford, CA
+        summary: Woods Institute for the Environment
+        start_date: "2020"
+        end_date: "2021"
+      - company: Sandia National Labs
+        position: R&D Intern
+        location: Albuquerque, NM
+        summary: "Center for Computing Research · Supervisor: Dr. Andrea Staid"
+        start_date: "2017"
+        end_date: "2020"
+    Education:
+      - institution: Stanford University
+        studyType: Postdoctoral Researcher
+        area: Civil and Environmental Engineering
+        location: Stanford, CA
         highlights:
-          - Relativity
-          - Description 2.
-
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+          - "Advisor: Dr. Sarah Fletcher"
+        start_date: "2020"
+        end_date: "2022"
+      - institution: Purdue University
+        studyType: Ph.D.
+        area: Industrial Engineering
+        location: West Lafayette, IN
         highlights:
-          - Description 1.
-          - Description 2.
-
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
-        highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
-
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
-
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
-
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
-
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
-
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
-
-    Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Languages:
-      - name: German
-        summary: "Native speaker"
-
-      - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
-
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
-
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+          - "Advisor: Dr. Roshanak Nateghi"
+        start_date: "2016"
+        end_date: "2020"
+      - institution: North Carolina State University
+        studyType: Bachelor of Science
+        area: Industrial and Systems Engineering
+        location: Raleigh, NC
+        start_date: "2011"
+        end_date: "2016"
+    Research Support:
+      - bullet: "**May 2025-December 2026**. $99,820 — North Carolina Collaboratory
+          — State of North Carolina — Lead PI. North Carolina Data Center Water Use
+          Analysis"
+      - bullet: "**May 2025-December 2026**. $99,719 — North Carolina Collaboratory
+          — State of North Carolina — Lead PI. North Carolina Power System Restoration
+          Optimization"
+      - bullet: "**June 2024-June 2025**. $75,000 — Digitizing Utilities Prize, Phase
+          1 — Department of Energy — Lead PI. North Carolina Short-term Power Outage
+          Prediction"
+      - bullet: "**June 2024-June 2025**. $7625 — R.L. Rabb Science and Society Fund
+          — North Carolina State University — Lead PI. North Carolina Climate & Health
+          Systems Impacts Symposium"
+      - bullet: "**August 2024-August 2025**. $30,000 — Research Collaboration Fund
+          — University Global Partnership Network — Lead NC State PI. Leveraging AI
+          for Real-time Prediction of Extreme Weather Events to Foster Climate Resilience:
+          a Global Research Alliance"
+      - bullet: "**September 2022-August 2023**. $100,000 — UPS Endowment Fund — Stanford
+          University — Co-PI. Assessing Drought Impacts on Urban Water Affordability
+          and Access"
+    Honors and Awards:
+      - title: Best Paper Award, Foundations of Risk
+        awarder: Society for Risk Analysis
+        date: "2025"
+        summary: Award given to Ph.D. Student Yamil Essus's paper on ecological resilience.
+      - title: C.A. Anderson Outstanding Faculty Award
+        awarder: NC State ISE Department
+        date: "2024"
+        summary: Award given to one faculty per year as voted by graduating seniors
+      - title: Sustainable Society Conference Delegate
+        awarder: University Global Partnership Network
+        date: "2024"
+        summary: One of 8 faculty selected from NC State to attend
+      - title: Rising Environmental Leadership Program Fellow
+        awarder: Stanford Woods Institute for the Environment
+        date: "2021"
+      - title: Outstanding Research Award
+        awarder: Purdue University School of Industrial Engineering
+        date: "2020"
+      - title: Outstanding Service Award
+        awarder: Purdue University School of Industrial Engineering
+        date: "2020"
+      - title: Student Spotlight
+        awarder: Society for Risk Analysis Engineering and Infrastructure Speciality
+          Group
+        date: "2020"
+      - title: Lee Chaden Fellowship
+        awarder: Purdue University School of Industrial Engineering
+        date: "2018"
+      - title: Estus and Vashti Magoon Award
+        awarder: Purdue University
+        date: "2018"
+    Invited Seminars:
+      - bullet: "**March 2026**. The Myth of Access: Quantifying Access to Essential
+          Services using AI — Civil and Environmental Engineering — Duke University"
+      - bullet: "**February 2026**. Risk, Optimization, and AI: Quantifying Access to
+          Essential Services — Civil and Environmental Engineering — Stanford University"
+      - bullet: "**April 2025**. Quantifying and Operationalizing Resilience, Equality
+          and Equity in Power Systems — Society for Risk Analysis Risk Science Webinar
+          Series — Virtual"
+      - bullet: "**October 2024**. Quantifying Community Resilience — AI for Extreme
+          Weather Event and Disaster Risk Management Seminar Series — Virtual"
+      - bullet: "**April 2024**. Engineering vs. Ecological Resilience — Center for
+          Environmental and Resource Economic Policy — NC State University"
+      - bullet: "**February 2024**. The Pitfalls of Aggregation in Assessing Community
+          Resilience — International Risk and Resilience Research Alliance — Virtual"
+      - bullet: "**April 2023**. Ethics & Social Responsibility of Data Analytics —
+          Energy Data Analytics Symposium — Duke University"
+      - bullet: "**March 2023**. Linking Sustainability & Resilience with Operations
+          Research — Operations Research Seminar Series — NC State University"
+      - bullet: "**March 2022**. Avoiding Resilience Traps with Unsupervised Learning
+          — Civil & Environmental Engineering — Cornell University"
+      - bullet: "**January 2022**. Methods for Operationalizing Community Resilience
+          Using Big Data — Industrial & Systems Engineering — NC State University"
+      - bullet: "**April 2020**. Social Resilience Fingerprinting — INFORMS Student
+          Chapter Summer Research Series — Oklahoma University"
+    Invited Conference Presentations:
+      - bullet: "**June 2025**. Post-disaster Power System Restoration Optimization
+          — Society for Risk Analysis, Europe Annual Meeting — Stavanger, Norway"
+      - bullet: "**December 2024**. Integrating Theories of Community Resilience — Society
+          for Risk Analysis Annual Meeting — Austin, TX"
+      - bullet: "**October 2023**. Predicting and Understanding Residential Water use
+          with Interpretable Machine Learning — INFORMS Annual Meeting — Phoenix, AZ"
+      - bullet: "**June 2023**. Quantifying Community Resilience to Break Resilience
+          Traps — The International Symposium on Sustainable Systems and Technology
+          — Fort Collins, CO"
+      - bullet: "**May 2023**. Quantifying Community Transformation — Institute for
+          Industrial and Systems Engineers Annual Conference — New Orleans, LA"
+      - bullet: "**December 2022**. Socio-hydrological impacts of water scarcity on
+          household water affordability — AGU Fall Meeting — New Orleans, LA"
+      - bullet: "**December 2022**. Socio-hydrological impacts of water scarcity on
+          household water affordability — Society for Risk Analysis Annual Meeting —
+          Tampa, FL"
+      - bullet: "**December 2020**. Quantifying Community Resilience to Break Resilience
+          Traps — Society for Risk Analysis Annual Meeting — Virtual"
+      - bullet: "**June 2020**. Be Careful Where You Get Your Tweets: Bias in Analysis
+          from Tweet Acquisition Source — International Conference on Computational
+          Social Science (IC2S2). — Virtual"
+      - bullet: "**October 2020**. Quantifying Community Transformation — INFORMS Annual
+          Meeting — Virtual"
+      - bullet: "**May 2020**. Natural Hazard Twitter Analysis Depends on Tweet Sources
+          — Natural Hazards Center Researcher's Meeting — Virtual"
+      - bullet: "**October 2019**. Social Resilience Fingerprinting — INFORMS Annual
+          Meeting — Seattle, WA"
+      - bullet: "**May 2019**. Interdependent Infrastructure System Risk & Resilience
+          to Natural Hazards. — Institute for Industrial and Systems Engineers Annual
+          Conference — Orlando, FL"
+      - bullet: "**December 2018**. Electric Power Infrastructure Resilience — Society
+          for Risk Analysis Annual Meeting — New Orleans, LA"
+      - bullet: "**October 2018**. The Sensitivity of Electric Power Infrastructure
+          Resilience to the Spatial Distribution of Disaster Impacts — INFORMS Annual
+          Meeting — Phoenix, AZ"
+      - bullet: "**June 2018**. Stochastic Unit Commitment Performance Considering Monte
+          Carlo Wind Power Scenarios — IEEE International Conference on Probabilistic
+          Methods Applied to Power 2018 Systems — Boise, ID"
+      - bullet: "**December 2017**. Transportation Network Recovery Analysis, an Equilibrated
+          Perspective — Society for Risk Analysis Annual Meeting — Crystal City, VA"
+      - bullet: "**October 2017**. The Cost of Wrong Assumptions in Tropical Cyclone
+          Frequency Distributions — INFORMS Annual Meeting — Houston, TX"
+      - bullet: "**May 2016**. UAVs Provide Lifesaving Medical Care — Institute for
+          Industrial and Systems Engineers Annual Conference — Anaheim, CA"
+    Student Conference Presentations:
+      - bullet: "**June 2025**. Quantifying Ecological Resilience — Society for Risk
+          Analysis, Europe Annual Meeting — Stavanger, Norway. Y. Essus and B. Rachunok"
+      - bullet: "**December 2024**. Fairness in Post-Disaster Power Restoration — Society
+          for Risk Analysis Annual Meeting — Austin, TX. I. Sepulveda and B. Rachunok"
+      - bullet: "**December 2024**. Quantifying Ecological Resilience — Society for
+          Risk Analysis Annual Meeting — Austin, TX. Y. Essus and B. Rachunok"
+      - bullet: "**October 2024**. Fairness in Post-Disaster Power Restoration — INFORMS
+          Annual Meeting — Seattle, WA. I. Sepulveda and B. Rachunok"
+      - bullet: "**October 2024**. Estimating Access risk during blackouts due to vehicle
+          electrification in North Carolina — INFORMS Annual Meeting — Seattle, WA.
+          Y. Essus and B. Rachunok"
+      - bullet: "**June 2024**. Quantifying Social Capital — International Symposium
+          on Sustainable Systems and Technology — Baltimore, MD. I. Sepulveda and B.
+          Rachunok"
+      - bullet: "**June 2024**. Electric Vehicles Limit Equitable Access to Essential
+          Services During Blackouts — International Symposium on Sustainable Systems
+          and Technology — Baltimore, MD. Y. Essus and B. Rachunok"
+      - bullet: "**December 2023**. Quantifying Social Capital — Society for Risk Analysis
+          Annual Meeting — Washington, DC. I. Sepulveda and B. Rachunok"
+      - bullet: "**December 2023**. Electric Vehicles Limit Equitable Access to Essential
+          Services During Blackouts — Society for Risk Analysis Annual Meeting — Washington,
+          DC. Y. Essus and B. Rachunok"
+      - bullet: "**October 2023**. Electric Vehicles Limit Equitable Access to Essential
+          Services During Blackouts — INFORMS Annual Meeting — Phoenix, AZ. Y. Essus
+          and B. Rachunok"
+    Teaching:
+      - bullet: "**Spring 2023-Fall 2025**. ISE408: Design and Control of Production
+          and Service Systems"
+      - bullet: "**Fall 2023, Fall 2024, Fall 2025**. ISE589: Computational Applications
+          of Sustainability and Resilience"
+    Research Advising:
+      - bullet: "**PhD Student Advisees:** **Industrial & Systems Engineering**. NC
+          State University — Yamil Essus — Spring 2023-present"
+      - bullet: "**PhD Student Advisees:** **Industrial & Systems Engineering**. NC
+          State University — Ignacio Seuplveda — Spring 2023-present"
+      - bullet: "**PhD Student Advisees:** **Operations Research**. NC State University
+          — Robert Smith — Spring 2024-present. Co-chair with Dr. Brandon McConnell
+          & Dr. Russell King"
+      - bullet: "**PhD Student Advisees:** **Operations Research**. NC State University
+          — Austin Semmil — Spring 2024-present. Co-chair with Dr. Brandon McConnell
+          & Dr. Sebestian Heese"
+      - bullet: "**PhD Student Advisees:** **Operations Research**. NC State University
+          — Elizabeth Harris — Fall 2025-present"
+      - bullet: "**PhD Student Advisees:** **Operations Research**. NC State University
+          — Caroline Hayes — Fall 2025-present"
+      - bullet: "**PhD Student Advisees:** **Industrial & Systems Engineering**. NC
+          State University — Juan Chala — Fall 2025-present"
+      - bullet: "**Master's Advisees:** **Operations Research**. NC State University
+          — Teresa Groton — Fall 2024-present"
+      - bullet: "**Master's Advisees:** **Industrial & Systems Engineering**. NC State
+          University — Patrick Leavitt — Fall 2023-Spring 2025. Current Position: Data
+          Scientist, US Coast Guard"
+      - bullet: "**Internal Committees:** **Industrial & Systems Engineering**. NC State
+          University — Troy Wibowo — Spring 2024-present — Ph.D. Committee Member"
+      - bullet: "**Internal Committees:** **Industrial & Systems Engineering**. NC State
+          University — Pranav Jain — Spring 2023- Spring 2024 — Ph.D. Committee Member"
+      - bullet: "**External Committees:** **Environmental and Water Resources Engineering**.
+          University of Georgia — Swagato Biswas Ankon — Spring 2023-present — MS Committee
+          Member"
+      - bullet: "**Graduate Independent Study Advisees:** **Integrated Manufacturing
+          Systems Engineering Institute**. NC State University — Aakash Dhruv — Spring
+          2024. Current Position: Supply Chain Engineering, Amazon"
+      - bullet: "**Undergraduate Research Advisees:** **Industrial & Systems Engineering**.
+          NC State University — Audrey Westlund — Spring 2025-present"
+      - bullet: "**Undergraduate Research Advisees:** **Industrial & Systems Engineering**.
+          NC State University — Ashton Sumpter — Spring 2025-present"
+      - bullet: "**Undergraduate Research Advisees:** **Industrial & Systems Engineering**.
+          NC State University — Matthew Bogdan — Fall 2024-present"
+      - bullet: "**Undergraduate Research Advisees:** **Industrial & Systems Engineering
+          REU**. NC State University — James Wilt — Summer 2024-present"
+      - bullet: "**Undergraduate Research Advisees:** **Industrial & Systems Engineering
+          REU**. NC State University — Ashelynn Jacobson — Summer 2024-present"
+      - bullet: "**Undergraduate Research Advisees:** **Industrial & Systems Engineering**.
+          NC State University — Drew Karnbad — Spring 2024-present"
+      - bullet: "**Undergraduate Research Advisees:** **Industrial & Systems Engineering**.
+          NC State University — Mike Mueller — Spring 2024"
+      - bullet: "**Undergraduate Research Advisees:** **Industrial & Systems Engineering**.
+          University of Puerto Rico at Mayagüez — Victoria Mendez Gonzalez — Summer
+          2023"
+      - bullet: "**Undergraduate Research Advisees:** **MI-REU Program**. NC State University
+          — Fatemeh Heydari — Summer 2023"
+      - bullet: "**Undergraduate Research Advisees:** **MI-REU Program**. NC State University
+          — Estevan Zamora — Summer 2023"
+      - bullet: "**Undergraduate Research Advisees:** **Honors Thesis**. NC State University
+          — Julia Seidel — Spring 2023"
+      - bullet: "**Undergraduate Research Advisees:** Stanford University — Adam Nayak
+          — 2021-2022"
+    University Service:
+      - bullet: "**Department and University Committees:** **Fall 2023, Spring 2024**.
+          ISE Masters of Engineering Management Committee"
+      - bullet: "**Department and University Committees:** **Spring 2023, Fall 2024,
+          Spring 2025**. ISE PhD Admissions Committee"
+      - bullet: "**Other Service:** **Spring 2023, Fall 2023, Spring 2024, Fall 2024**.
+          Engineering Open House"
+      - bullet: "**Other Service:** **Summer 2023, Summer 2024**. ISE Summer Camp"
+    Scientific Community Service:
+      - bullet: "**Conference Organizing:** **2024**. International Symposium on Sustainable
+          Systems and Technology (ISSST) — Sustainability and Resilience of Infrastructure
+          Track Chair"
+      - bullet: "**Conference Organizing:** **2023**. Society for Risk Analysis Annual
+          Meeting — Equity, Sustainability and Engineering Session Chair"
+      - bullet: "**Professional Societies:** **2016-present**. Society for Risk Analysis.
+          Council member 2021-2023, Secretary 2024-present"
+      - bullet: "**Professional Societies:** **2017-present**. INFORMS"
+      - bullet: "**Professional Societies:** **2016-present**. Institute for Industrial
+          and Systems Engineers"
