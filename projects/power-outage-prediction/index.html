@@ -1,0 +1,133 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> North Carolina Short-Term Power Outage Prediction | Sustainable and Resilient Systems Lab </title> <meta name="author" content="Ben Rachunok"> <meta name="description" content="Data-driven methods for anticipating near-term electric power outages."> <meta name="keywords" content="climate resilience, infrastructure, equitable resilience, optimization, data science, NC State"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 1120px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%8C%8E&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://brachunok.com/projects/power-outage-prediction/"> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Sustainable and Resilient Systems Lab </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">home </a> </li> <li class="nav-item "> <a class="nav-link" href="/what-we-do/">what we do </a> </li> <li class="nav-item "> <a class="nav-link" href="/people/">people </a> </li> <li class="nav-item "> <a class="nav-link" href="/news/index.html">news/blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">teaching </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">North Carolina Short-Term Power Outage Prediction</h1> <p class="post-description">Data-driven methods for anticipating near-term electric power outages.</p> </header> <article> <div class="project-page-meta"> <span>U.S. Department of Energy</span> <span>Digitizing Utilities Prize</span> <span>2024–2025</span> </div> <h2 id="project-focus">Project focus</h2> <p>This project developed data-driven methods for predicting short-term electric power outages in North Carolina.</p> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Ben Rachunok. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Archival imagery courtesy of the <a href="https://www.usgs.gov/media/images/usgs-aerial-photography-and-imagery-library" target="_blank" rel="external nofollow noopener">U.S. Geological Survey</a> (public domain). </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-home",
+    title: "home",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-what-we-do",
+          title: "what we do",
+          description: "Research themes of the Sustainable and Resilient Systems Lab.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/what-we-do/";
+          },
+        },{id: "nav-people",
+          title: "people",
+          description: "members of the lab or group",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/people/";
+          },
+        },{id: "nav-news-blog",
+          title: "news/blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/news/index.html";
+          },
+        },{id: "nav-publications",
+          title: "publications",
+          description: "publications by categories in reversed chronological order. generated by jekyll-scholar.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-teaching",
+          title: "teaching",
+          description: "Courses in production systems, sustainability, risk, and resilience.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/teaching/";
+          },
+        },{id: "books-the-godfather",
+          title: 'The Godfather',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_godfather/";
+            },},{id: "projects-artificial-intelligence-driven-optimization-of-coastal-morphodynamics-and-infrastructure-resilience",
+          title: 'Artificial Intelligence-Driven Optimization of Coastal Morphodynamics and Infrastructure Resilience',
+          description: "Connecting AI, coastal change, and infrastructure decisions to improve resilience.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/coastal-ai-resilience/";
+            },},{id: "projects-north-carolina-data-center-water-use-analysis",
+          title: 'North Carolina Data Center Water Use Analysis',
+          description: "Understanding the water demands and system implications of data-center growth in North Carolina.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/data-center-water-use/";
+            },},{id: "projects-north-carolina-short-term-power-outage-prediction",
+          title: 'North Carolina Short-Term Power Outage Prediction',
+          description: "Data-driven methods for anticipating near-term electric power outages.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/power-outage-prediction/";
+            },},{id: "projects-north-carolina-power-system-restoration-optimization",
+          title: 'North Carolina Power System Restoration Optimization',
+          description: "Optimization methods for restoring electric power systems after disruption.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/power-restoration-optimization/";
+            },},{id: "projects-ai-enabled-decision-support-for-rate-setting-and-infrastructure-investment-in-decentralized-water-utilities-under-drought",
+          title: 'AI-Enabled Decision Support for Rate Setting and Infrastructure Investment in Decentralized Water Utilities...',
+          description: "Decision tools for water rates and infrastructure investment under drought and uncertainty.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/water-utility-decision-support/";
+            },},{id: "teachings-ise-408-design-and-control-of-production-and-service-systems",
+          title: 'ISE 408: Design and Control of Production and Service Systems',
+          description: "Quantitative analysis and design of manufacturing plants and service systems, with emphasis on inventory, production flow, variability, lean systems, and demand forecasting.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/ise-408/";
+            },},{id: "teachings-ise-589-computational-applications-of-sustainability-and-resilience",
+          title: 'ISE 589: Computational Applications of Sustainability and Resilience',
+          description: "Computational approaches to measuring sustainability, risk, and resilience using decision analysis, data science, stochastic processes, optimization, and simulation.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/ise-589/";
+            },},{id: "wiki-start-here",
+          title: 'Start here',
+          description: "How the lab wiki is organized and how new notes are added.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/start-here/";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%62%61%72%61%63%68%75%6E@%6E%63%73%75.%65%64%75", "_blank");
+        },
+      },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/0000-0001-6405-978X", "_blank");
+        },
+      },{
+        id: 'social-rss',
+        title: 'RSS Feed',
+        section: 'Socials',
+        handler: () => {
+          window.open("/feed.xml", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=t3IhL-MAAAAJ", "_blank");
+        },
+      },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
