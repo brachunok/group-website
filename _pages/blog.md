@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /news/
+permalink: /blog/
 title: news/blog
 nav: true
 nav_order: 3
