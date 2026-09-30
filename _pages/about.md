@@ -34,9 +34,14 @@ latest_posts:
   <span>Raleigh, NC</span>
 </div>
 
-<p class="gd-intro">We study communities as interconnected systems—and design better ways to prepare for a changing climate.</p>
+<p class="gd-intro">We study communities as interconnected systems—and design better ways to prepare for major disruptions, natural hazards, and other shocks.</p>
 
-<p class="gd-methods">Our research combines optimization, data science, machine learning, and simulation to quantify risk, predict impacts, and improve adaptation decisions. A central goal is closing the climate resilience gap by identifying and reducing the disproportionate burdens of extreme events on historically disadvantaged populations.</p>
+<p class="gd-methods">Our research combines optimization, data science, machine learning, and simulation to quantify risk, predict impacts, and improve adaptation decisions, with particular attention to how extreme events affect vulnerable groups.</p>
+
+<section class="gd-who-we-are" aria-labelledby="who-we-are-heading">
+  <span class="gd-who-we-are__label" id="who-we-are-heading">Who we are</span>
+  <p>Interdisciplinary engineers, applied mathematicians, computer scientists, and statisticians working on real-world problems across three domains.</p>
+</section>
 
 <div class="gd-research-grid">
   <section class="gd-research-item">

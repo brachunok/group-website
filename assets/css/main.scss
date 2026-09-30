@@ -235,16 +235,45 @@ footer.sticky-bottom {
 .gd-methods {
   border-left: 10px solid var(--lab-rust);
   font-size: 1.05rem;
-  margin: 2.5rem 0 4rem;
+  margin: 2.5rem 0 3rem;
   max-width: 64ch;
   padding-left: 1.25rem;
+}
+
+.gd-who-we-are {
+  align-items: start;
+  background: var(--lab-steel);
+  color: var(--lab-paper);
+  display: grid;
+  gap: 1rem 2.5rem;
+  grid-template-columns: minmax(8rem, 0.55fr) minmax(0, 2.45fr);
+  margin: 0 0 3rem;
+  padding: clamp(1.4rem, 3vw, 2.4rem);
+}
+
+.gd-who-we-are__label {
+  border-top: 1px solid currentColor;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  padding-top: 0.55rem;
+  text-transform: uppercase;
+}
+
+.gd-who-we-are p {
+  font-size: clamp(1.35rem, 2.8vw, 2.45rem);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  margin: 0;
+  max-width: 34ch;
 }
 
 .gd-research-grid {
   border-top: 1px solid var(--lab-ink);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 3rem 0 4rem;
+  margin: 0 0 4rem;
 }
 
 .gd-research-item {
@@ -648,6 +677,10 @@ body:has(.people-kicker) .post h3 {
 }
 
 @media (max-width: 767px) {
+  .gd-who-we-are {
+    grid-template-columns: 1fr;
+  }
+
   .gd-research-grid {
     grid-template-columns: 1fr;
   }
