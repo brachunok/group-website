@@ -40,10 +40,13 @@ pagination:
     <div class="news-event-list">
       {% for event in upcoming_events %}
         <article class="news-event">
-          <time datetime="{{ event.date }}">{{ event.date | date: "%b %d, %Y" }}</time>
+          <time datetime="{{ event.date }}">
+            {{ event.date | date: "%b %-d" }}{% if event.end_date %}–{{ event.end_date | date: "%b %-d" }}{% endif %}, {{ event.date | date: "%Y" }}
+          </time>
           <div>
             <h3>{% if event.url %}<a href="{{ event.url }}">{{ event.title }}</a>{% else %}{{ event.title }}{% endif %}</h3>
             {% if event.venue or event.location %}<p>{{ event.venue }}{% if event.venue and event.location %} / {% endif %}{{ event.location }}</p>{% endif %}
+            {% if event.attendees %}<p><strong>Attending:</strong> {{ event.attendees | join: ", " }}</p>{% endif %}
           </div>
         </article>
       {% endfor %}

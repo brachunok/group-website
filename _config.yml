@@ -138,7 +138,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: lab news # blog_name will be displayed in your blog page
-blog_description: Publications, projects, people, and updates from the Sustainable and Resilient Systems Lab
+blog_description: Research updates, half-baked ideas, conference dispatches, interesting figures, and other things that probably don’t warrant a press release.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 

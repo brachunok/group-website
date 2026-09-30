@@ -1,7 +1,22 @@
 # Add future presentations here in chronological order.
-# - title: Presentation title
-#   date: 2026-10-15
-#   venue: Conference or seminar
-#   location: Raleigh, North Carolina
-#   url: https://example.com
-[]
+- title: INFORMS Annual Meeting
+  date: "2026-11-01"
+  end_date: "2026-11-04"
+  venue: Institute for Operations Research and the Management Sciences
+  location: San Francisco, California
+  attendees:
+    - Juan Chala
+    - Elizabeth Harris
+  url: https://meetings.informs.org/wordpress/annual/
+
+- title: SRA Annual Meeting
+  date: "2026-12-06"
+  end_date: "2026-12-10"
+  venue: Society for Risk Analysis
+  location: Atlanta, Georgia
+  attendees:
+    - Juan Chala
+    - Elizabeth Harris
+    - Ben Rachunok
+    - Caroline Folsom
+  url: https://www.sra.org/event/2026-sra-annual-meeting/
