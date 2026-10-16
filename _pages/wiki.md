@@ -3,8 +3,8 @@ layout: page
 permalink: /wiki/
 title: wiki
 description: Course notes, methods, computing guides, and shared lab knowledge.
-nav: false
-nav_order: 8
+nav: true
+nav_order: 7
 ---
 
 <div class="gd-kicker">
