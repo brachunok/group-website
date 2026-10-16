@@ -38,6 +38,7 @@ profiles:
       <p>Expected graduation: 2028</p>
       <p>NC State University</p>
   - align: right
+    image: people/shakhawath-hossain.jpg
     content: shakhawath-hossain.md
     image_circular: false
     more_info: >
@@ -60,6 +61,7 @@ profiles:
       <p>Expected graduation: 2027</p>
       <p>NC State University</p>
   - align: left
+    image: people/benjamin-lake.jpg
     content: benjamin-lake.md
     image_circular: false
     more_info: >
