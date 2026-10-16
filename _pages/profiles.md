@@ -24,6 +24,7 @@ profiles:
       <p>Operations Research</p>
       <p>NC State University</p>
   - align: right
+    image: people/camryn-deames.jpg
     content: camryn-deames.md
     image_circular: false
     more_info: >
