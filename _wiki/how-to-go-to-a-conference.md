@@ -28,11 +28,11 @@ At its simplest, a conference is a gathering of researchers and practitioners in
 
 The type of research, style of talks, and level of technical detail depend heavily on the conference. Some conferences in our area are very math heavy (INFORMS, SIAM, Wintersim). Others are policy and impact focused (SRA, ISSST). Some are interdisciplinary (DMDU). Some are, frankly, kind of for hanging out with your old friends from grad school.
 
-Conferences also develop a *vibe* based on the people who regularly attend them. Most PIs I know have between one and four conferences that they regularly attend, depending on availability, overlap with other commitments, which students are presenting, and so on. I mention the people who attend conferences because ultimately...
+Conferences also develop a _vibe_ based on the people who regularly attend them. Most PIs I know have between one and four conferences that they regularly attend, depending on availability, overlap with other commitments, which students are presenting, and so on. I mention the people who attend conferences because ultimately...
 
 **You're going to a conference to get your work in front of those people and to learn what they do.**
 
-This is a way to learn about and join *your field* and to get a feel for the people and perspectives that constitute it.
+This is a way to learn about and join _your field_ and to get a feel for the people and perspectives that constitute it.
 
 Procedurally, you usually submit an abstract or paper six to eight months in advance. Sometimes you submit on your own (a "contributed abstract"), and sometimes your talk is submitted as part of an organized session with several related presentations. In our area, a typical conference presentation is around 10–15 minutes.
 
@@ -46,9 +46,9 @@ Why not just email each other?
 
 Well, we tried that during COVID, and most people hated it. Virtual conferences had one huge advantage: they dramatically expanded access for people who otherwise couldn't attend. But they also demonstrated how difficult it is to reproduce the informal interactions that make conferences valuable. The scientific community (at least the parts I interact with) has largely swung back toward in-person meetings.
 
-I think that says something important about scientific fields. *Science is a deeply social activity.* Papers are a formal record of scientific work, but a tremendous amount of science happens through conversations had with other scientists. For example, someone mentioning a method you hadn't considered in a Q&A after your talk, meeting someone whose paper you've been reading for three years, hearing about a new research direction over a coffee break, or realizing during someone else's talk that their idea solves a problem you've been stuck on.
+I think that says something important about scientific fields. _Science is a deeply social activity._ Papers are a formal record of scientific work, but a tremendous amount of science happens through conversations had with other scientists. For example, someone mentioning a method you hadn't considered in a Q&A after your talk, meeting someone whose paper you've been reading for three years, hearing about a new research direction over a coffee break, or realizing during someone else's talk that their idea solves a problem you've been stuck on.
 
-That is the *real* reason to go to conferences.
+That is the _real_ reason to go to conferences.
 
 ### What do you do at a conference?
 
@@ -61,13 +61,14 @@ It might not feel like it when you're starting out, but academia is a remarkably
 One takeaway from this is that conferences compound in value over time. Your first conference will be walking into a room full of strangers. Eventually, it becomes a room full of colleagues (and maybe friends!)
 
 ## Before the conference
+
 ### Find one!
+
 Talk to people in your field (most likely, your advisor).
 
 More specifically, look at programs from previous years. A conference program tells you who actually attends and what they actually talk about.
 
 You might not recognize many of the presenters because they are often graduate students. Look at their coauthors and advisors. If the same researchers and research groups you read are repeatedly showing up, that's probably a useful conference for you.
-
 
 ### Submit something
 
@@ -94,7 +95,6 @@ You don't want to get invited to dinner with someone interesting, meet a potenti
 
 For academics old and new, conferences are your Super Bowl. You spend months doing work with the chance to present it and getting yourself into a place where interesting people in your field have all agreed to congregate. Take advantage of it.
 
-
 ## During the conference
 
 Go to talks. But don't measure the success of the conference by the number of talks you attend.
@@ -103,11 +103,12 @@ A fantastic conversation in the hallway can be more valuable than sitting throug
 
 If someone asks you to get coffee, get coffee. If a group is going to dinner, go to dinner. If you meet someone working on something fascinating, ask them questions. If somebody introduces you to someone you've wanted to meet, don't immediately disappear because the next session has started. The conference program is more of a guideline.
 
-That being said, *actually go to talks*. Having fun, sightseeing, being a tourist is fun, but you're at a conference to advance your career. Don't let that get lost in the adventure of a new place.
+That being said, _actually go to talks_. Having fun, sightseeing, being a tourist is fun, but you're at a conference to advance your career. Don't let that get lost in the adventure of a new place.
 
 Especially for bigger conferences, I spend an hour a few weeks beforehand and make a “pre-conference plan” (see below), so I know where to go, who I want to see etc.
 
 ### Attitude and Behavior
+
 Conference Rule: Be friendly to everyone no exceptions
 
 I cannot emphasize this enough. From the moment you leave your office to begin traveling until the moment you return: **do not say one single negative word about anyone.** Keep those opinions bottled right up.
@@ -118,7 +119,7 @@ Be generous. Be curious. Be enthusiastic about other people's work. Ask question
 
 There is one important exception: **problematic or inappropriate behavior.** If you're in my group, we bring our culture of excellence, full support for one another, and zero tolerance for intolerance everywhere we go. Being positive does not mean ignoring behavior that makes people unsafe, unwelcome, or disrespected. Every conference I've been to has a way to report someone being inappropriate. This can take many forms and shouldn't be taken lightly. Some people (wrongly) believe that because you're outside the office, you don't have to be professional, and academia needs to have zero tolerance for that.
 
-One kind of touchy aspect of this is alcohol. I've never been to a conference that didn't have at least a cash bar at *something*, so it may feel like drinking is encouraged. I'm of the opinion that it's fine to drink at conferences but—especially at official events—stay well within your established limits. Use your good judgment and err on the side of caution.
+One kind of touchy aspect of this is alcohol. I've never been to a conference that didn't have at least a cash bar at _something_, so it may feel like drinking is encouraged. I'm of the opinion that it's fine to drink at conferences but—especially at official events—stay well within your established limits. Use your good judgment and err on the side of caution.
 
 ## After the conference
 
@@ -126,7 +127,7 @@ Give yourself some time to recover. Conferences are kind of a lot. You have prob
 
 Then, after you've recovered for a day or two, start your follow-ups.
 
-Rule: *always* send follow ups
+Rule: _always_ send follow ups
 
 If someone gave you a paper, read it. If you promised to send something, send it. If you had a particularly good conversation, a short "great meeting you" email is completely reasonable. If you came home with three new research ideas, write them down before normal life eats them. I typically leave conferences wiped physically, but very jazzed intellectually and as soon as you get back make sure you capture as much of that energy as you can.
 
@@ -180,7 +181,7 @@ Whenever possible, try to be part of an invited or organized session.
 
 I need your abstract **two weeks before the submission deadline**.
 
-And by "submission deadline," I mean the *actual* submission. Before giving me the materials, go through the submission portal as though you were submitting everything, stopping only before the final submission/payment step.
+And by "submission deadline," I mean the _actual_ submission. Before giving me the materials, go through the submission portal as though you were submitting everything, stopping only before the final submission/payment step.
 
 Conference websites love surprises. Sometimes there is another essay. Sometimes the travel-grant application requires an additional document. Sometimes the abstract has a completely different word limit than advertised elsewhere. Whatever the portal requires, I want the complete package two weeks in advance.
 
@@ -205,7 +206,7 @@ Before you leave:
 The conference planning form/report is a bit of homework that (I think) will help you get the most from a conference. The materials in this are things I've found are helpful after a decade of doing this. The form should include:
 
 **1. Your overall schedule.**
-Arrival, departure, registration, meals, conference events, and anything else with a fixed time. Identify which meals the conference provides and which periods are open for you to make plans with other people. If there is a graduate-student breakfast, put it on the schedule. If there is a new-member networking dinner, put it on the schedule. You want this to be a living document that you can reference for where to go and what to do for everything *except* talks.
+Arrival, departure, registration, meals, conference events, and anything else with a fixed time. Identify which meals the conference provides and which periods are open for you to make plans with other people. If there is a graduate-student breakfast, put it on the schedule. If there is a new-member networking dinner, put it on the schedule. You want this to be a living document that you can reference for where to go and what to do for everything _except_ talks.
 
 **2. Talks you want to attend.**
 This is a lot of work. It is absolutely worth doing.
