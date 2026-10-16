@@ -2,7 +2,7 @@
 
 ## Shakhawath Hossain
 
-Shakhawath is a Ph.D. student in Industrial and Systems Engineering at NC State University. Originally from Bangladesh, he completed his undergraduate degree in Industrial and Production Engineering at Khulna University of Engineering & Technology.
+Shakhawath is a Ph.D. student in Industrial and Systems Engineering at NC State University. Originally from Bangladesh, he completed his undergraduate degree in Industrial and Production Engineering at Khulna University of Engineering & Technology. His research uses machine learning and data-driven models to analyze risks from natural and human-caused hazards.
 
 ### Beyond the lab
 

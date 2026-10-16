@@ -6,4 +6,4 @@ Robert is from Durham, North Carolina. He completed his undergraduate studies at
 
 ### Beyond the lab
 
-Robert enjoys sports.
+Robert enjoys sports. He once completed the Krispy Kreme Challenge in 31 minutes and 15 seconds—on a track during the COVID-19 pandemic.
