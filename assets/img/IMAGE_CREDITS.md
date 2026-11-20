@@ -6,3 +6,6 @@
 - `projects/data-center.jpg` — NASA, Apollo 13 Mission Control, 1970. Public domain. Source: <https://commons.wikimedia.org/wiki/File:1970_Mission_Control_Apollo_13.jpg>
 - `projects/power-restoration.jpg` — Andrea Booher, Federal Emergency Management Agency. Public domain. Source: <https://commons.wikimedia.org/wiki/File:FEMA_-_38587_-_Utility_worker_working_in_a_tree_in_Texas.jpg>
 - `projects/outage-prediction.png` — ESSA/NASA satellite image of Hurricane Ella, 1970. Public domain. Source: <https://commons.wikimedia.org/wiki/File:Hurricane_Ella_(1970).png>
+- `people/juan-chala.jpg` — Photograph provided by Juan Chala and used with permission.
+- `blog/juan-down-east-road.jpg` — Photograph by Juan Chala, taken in Down East, Carteret County, North Carolina. Used with permission.
+- `blog/juan-down-east-harbor.jpg` — Photograph by Juan Chala, taken in Down East, Carteret County, North Carolina. Used with permission.
