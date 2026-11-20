@@ -8,7 +8,7 @@ categories: lab-news
 thumbnail: /assets/img/blog/juan-down-east-road.jpg
 ---
 
-> **Editor’s note:** This is part one of the 'behind the scenes' of the lab series. I asked everyone to write a brief piece on something they've found impactful throughout their research careers. Juan provides our first installment with a description of his time as one of this year's KIETS Climate Leaders Fellows.
+> **Editor’s note:** This is part one of the 'behind the scenes' of the lab series. I asked everyone to write a brief piece on something they've found impactful throughout their research careers. Juan provides our first installment with a description of his time as one of this year's KIETS Climate Leaders Fellows. --Ben
 
 _By Juan Chala_
 
