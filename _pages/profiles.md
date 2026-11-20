@@ -8,6 +8,7 @@ nav_order: 2
 
 profiles:
   - align: right
+    image: people/juan-chala.jpg
     content: juan-chala.md
     image_circular: false
     more_info: >
