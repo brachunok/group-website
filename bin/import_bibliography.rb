@@ -95,6 +95,16 @@ def selected_keyword?(entry)
   (match[1] || match[2]).split(",").any? { |keyword| keyword.strip.casecmp("selected").zero? }
 end
 
+def under_review?(entry)
+  keywords = field_value(entry, "keywords")
+  return false unless keywords
+
+  review_keywords = ["review", "under review", "submitted"]
+  keywords.split(",").any? do |keyword|
+    review_keywords.any? { |review_keyword| keyword.strip.casecmp(review_keyword).zero? }
+  end
+end
+
 def student_author_indexes(entry)
   annotations = field_value(entry, "author+an")
   return [] unless annotations
@@ -135,6 +145,11 @@ def enrich_entry(entry, scholar_ids, homepage_selected:)
     entry = mark_student_authors(entry, students)
     entry = add_field(entry, "student_paper", "true")
   end
+
+  # Make manuscript status visible in al-folio's publication citation. The
+  # canonical CV repository remains the source of truth: a review-related
+  # keyword is translated into the display field used by the website.
+  entry = add_field(entry, "additional_info", " — Under review") if under_review?(entry)
 
   if homepage_selected
     entry = add_field(entry, "selected", "true")
